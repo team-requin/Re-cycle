@@ -15,7 +15,14 @@
                 </div>
                 <div id="inputDiv">
                     <input type="text" id="name" placeholder="이름">
-                    <input type="text" id="email" placeholder="이메일"/>
+                    <label>
+                        <input type="text" id="email" placeholder="이메일"/>
+                        <button id="emailCheck">이메일 인증</button>
+                    </label>
+                    <label>
+                        <input type="email" id="emailCheckNumber" placeholder="이메일 확인번호">
+                        <button id="numberCheck">번호 확인</button>
+                    </label>
                     <input type="password" id="password" placeholder="비밀번호"/>
                     <input type="text" id="phoneNumber" placeholder="핸드폰"/>
                 </div>
@@ -25,5 +32,8 @@
                 </div>
             </div>
         </div>
+        
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="signup.js"></script>
 </body>
 </html>

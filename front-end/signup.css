@@ -27,6 +27,8 @@
     justify-content: center;
 }
 
+
+
 #inputDiv input[type="text"] , #inputDiv input[type="password"]{
     display:block;
     width:400px;
@@ -74,3 +76,31 @@ label{
     color: #4AB781;
 }
 
+#emailCheck{
+    display: inline-block;
+    width:40px;
+    align-items: center;
+    border-radius: 3px;
+    margin-top:20px;
+}
+
+#emailCheckNumber{
+    display:none;
+    width:400px;
+    height:50px;
+    margin-top:20px;
+    background-color:#fcfcfc;
+    border-radius: 15px;
+    padding-left:15px;
+    font-size:15px;
+    font-weight: 600
+}
+
+#numberCheck{
+    display: inline-block;
+    width:40px;
+    align-items: center;
+    border-radius: 3px;
+    margin-top:20px;
+    display:none;
+}
