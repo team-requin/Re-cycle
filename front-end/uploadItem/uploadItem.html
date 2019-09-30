@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>Document</title>
+    <link href="uploadItem.css" rel="stylesheet">
+</head>
+<body>
+    <div id="uploadItem">
+        <iframe src="../header.html"></iframe>
+
+        <div id="title">
+            <div id="bar"></div>
+            <div id="titleImg">
+                <img src="../img/상품등록.png">
+                <p>상품등록</p>
+            </div>
+            <div id="bar"></div>
+        </div>
+    </div>
+
+    <div id="uploadDiv">
+
+        <div id="item">
+            <div id="spaceAround">
+            <div id="itemMainImgDiv">
+                <div>
+                <input type="file" accept="image/*"/>
+                <p>메인 이미지</p><br/>
+                <p>클릭하여 사진을 넣어주세요</p>
+                <img src=""/>
+                </div>
+            </div>
+            
+            <div>
+                <div class="itemTitle">
+                    <p>상품명</p>
+                    <input type="text"/>
+                </div>
+
+                <div id="sizeButton">
+                    <div class="itemTitle">
+                        <p>사이즈</p>
+                    </div>
+                    <div class="flexer">
+                        <div class="sizeButtons">
+                            <label>S<input type="radio" name="size" value="S"/></label>
+                        </div>
+    
+                        <div class="sizeButtons">
+                            <label>M<input type="radio" name="size" value="M"/></label>
+                        </div>
+    
+                        <div class="sizeButtons">
+                            <label>L<input type="radio" name="size" value="L"/></label>
+                        </div>
+    
+                        <div class="sizeButtons">
+                            <label>XL<input type="radio" name="size" value="XL"/></label>
+                        </div>
+    
+                        <div class="sizeButtons">
+                            <label>XXL<input type="radio" name="size" value="XXL"/></label>
+                        </div>    
+
+                    </div>
+                </div>
+
+                <div id="itemStateButton">
+                    <div class="itemTitle">
+                        <p>상태</p>
+                    </div>
+                    <div class="flexer">
+                        <div class="stateButtons">
+                            <label><input type="radio" name="state" value="D">D</label>
+                        </div>
+                        <div class="stateButtons">
+                            <label><input type="radio" name="state" value="C">C</label>
+                        </div>
+                        <div class="stateButtons">
+                            <label><input type="radio" name="state" value="B">B</label>
+                        </div>
+                        <div class="stateButtons">
+                            <label><input type="radio" name="state" value="A">A</label>
+                        </div>
+                        <div class="stateButtons">
+                            <label><input type="radio" name="state" value="S">S</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="itemCategory">
+                    <div class="itemTitle">
+                            <p>카테고리</p>
+                    </div>
+                    <div class="flexer">
+                        <div class="categoryButtons">
+                            <label><input type="radio" name="state" value="t-shirts"><img src="../img/Shirts_off.png" id="Shirts"></label>
+                        </div>
+                        <div class="categoryButtons">
+                            <label><input type="radio" name="state" value="shoes"><img src="../img/Shoes_off.png" id="Shoes"></label>
+                        </div>
+                        <div class="categoryButtons">
+                            <label><input type="radio" name="state" value="pants"><img src="../img/Pants_off.png" id="Pants"></label>
+                        </div>
+                        <div class="categoryButtons">
+                            <label><input type="radio" name="state" value="Accessory"><img src="../img/Accessory_off.png" id="Accessory"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            </div>
+
+            <div id="itemPrice">
+                <div id="Price">
+                    <p>판매가격
+                        <input type="number"/>
+                        원
+                    </p>
+                </div>
+            </div>
+
+            <div id="itemExplain">
+                <div class="itemTitle">
+                    <p>상세 설명</p>
+                </div>
+                <textarea id="itemExplainArea"></textarea>
+            </div>
+
+            <div id="submitButton">
+                <input type="button" value="확인"/>
+            </div>
+        </div>
+    </div>
+    <iframe src="../footer.html" id="footer"></iframe>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="uploadItem.js"></script>
+</body>
+</html>
