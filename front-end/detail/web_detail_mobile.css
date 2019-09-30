@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Apple SD Gothic Neo';
+}
+ul {
+    list-style: none;
+}
+#logo {
+    display: block;
+    margin: 30px auto 0;
+    width: 100px;
+    height: 50px;
+}
+#category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border: 2px solid #4AB781;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+#category > li {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+#category > li > input {
+    display: none;
+}
+#category > li img {
+    display: block;
+    width: 30px;
+    margin: auto;
+}
+#imgWrapDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#category > li > label {
+    font-size: 0.75em;
+    color: #818181;
+}
+#categoryText {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 15px !important;
+    font-size: 25px;
+    color: #4AB781;
+    background-color: #ffffff;
+}
+.curProductTop {
+    padding: 15px 0;
+    margin: 25px 0;
+    position: relative;
+    border-bottom: 2px solid #48b67f80;
+}
+.curProductTop > p {
+    font-size: 15px;
+}
+.curProductTop > span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+    color: #707070;
+}
+.curProductBottom {
+    display: flex;
+    padding-bottom: 30px;
+    overflow: scroll;
+}
+.product {
+    flex: 1;
+    text-align: center;
+    padding: 0 25px;
+}
+.product > img {
+    display: block;
+    width: 70px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #707070;
+    border-radius: 15px;
+}
+.product > p {
+    font-size: 10px;
+}
