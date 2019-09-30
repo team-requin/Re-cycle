@@ -21,16 +21,17 @@ function loginClick(){
             "email" : id.value,
             "password" : password.value,
         }
-    }).catch((e)=>{
-        alert("로그인에 실패하였습니다.");
     }).then(e=>{
         localStorage.setItem("token",e.data.access_token);
-        location.href="./main.html";
+        localStorage.setItem("refreshToken",e.data.refresh_token);
+        location.href="../main/main.html";
+    }).catch((e)=>{
+        alert("로그인에 실패하였습니다.");
     })
 }
 
 function missingPasswordClick(){
-    location.href="./ResetPassword.html";    
+    location.href="../ResetPassword/ResetPassword.html";    
 }
 
 function idIsEmpty(){
@@ -45,5 +46,12 @@ function passwordIsEmpty(){
     }
 }
 
+function keyPress(e){
+    if(e.key === "Enter"){
+        loginClick();
+    }
+}
+
 button.addEventListener("click",loginClick);
 missingPassword.addEventListener("click",missingPassword);
+window.addEventListener("keypress",keyPress);
