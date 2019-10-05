@@ -24,7 +24,7 @@ function loginClick(){
     }).then(e=>{
         localStorage.setItem("token",e.data.access_token);
         localStorage.setItem("refreshToken",e.data.refresh_token);
-        location.href="../main/main.html";
+        location.href="../view/view_mobile.html";
     }).catch((e)=>{
         alert("로그인에 실패하였습니다.");
     })

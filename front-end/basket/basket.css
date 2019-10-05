@@ -1,0 +1,132 @@
+@import "../footer_mobile.css";
+
+*{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+input[type="checkbox"]{
+    width:17px;
+    height:17px;
+    background-color: white;
+}
+#basket{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#basketTitleDiv{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-size:25px;
+    margin-top:20px;
+}
+
+
+#basketContent{
+    width:85%;
+}
+
+#basketDelete{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:40px;
+}
+
+#allCheckBox{
+    width:17px;
+    height:17px;
+}
+
+#delete{
+    width:110px;
+    height:30px;
+    background-color:#4AB781;
+    color:white;
+    border-radius: 15px;
+}
+
+#items{
+    overflow-y:scroll;
+    height:65vh;
+}
+.center{
+    width:100%;
+    height:2px;
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.bar{
+    width:100%;
+    height:2px;
+    background-color:rgb(207, 207, 207);
+}
+
+.basketItem{
+    display:flex;
+    height:100px;
+}
+
+.itemCheckBoxDiv{
+    margin:5px;
+}
+
+.itemImg{
+    display:flex;
+    justify-content: center;
+    margin-left:10px;
+}
+
+.itemImg img{
+    width:90px;
+    height:100px;
+}
+
+.itemInfo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center;
+    height:100px;
+    width:180px;
+}
+
+
+.itemInfo div p{
+    width:100%;
+    text-align: center;
+    font-size:15px;
+    font-weight: 600;
+    margin-top:5px;
+}
+
+#basketInfo{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#basketInfo div{
+    display:flex;
+    align-items: center;
+}
+
+#allPrice{
+    font-size:20px;
+    font-weight: 550;
+}
+
+#buy{
+    width:110px;
+    height:30px;
+    background-color:#4AB781;
+    color:white;
+    border-radius: 10px;
+}

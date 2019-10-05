@@ -17,8 +17,13 @@ function signupClick(){
     location.href="../signup/signup.html";
 }
 
+function mainButtonClick(){
+    location.href="../view/view_mobile.html";
+}
+
 login.addEventListener("click",loginClick);
 signup.addEventListener("click",signupClick);
+mainButton.addEventListener("click",mainButtonClick);
 
 window.onload = ()=>{
     accessTokenCheck();

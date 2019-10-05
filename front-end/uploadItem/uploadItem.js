@@ -7,7 +7,10 @@ window.onload = ()=>{
         }
     }).then((e)=>{
         localStorage.setItem("token",e.data.access_token);
-    });
+    }).catch((e)=>{
+        alert("다시 로그인을 해주세요.");
+        location.href="../login/login.html";
+    })
 }
 
 const titleInput = document.querySelector(".itemTitle input");
@@ -38,6 +41,7 @@ let explain = "";
 let category = "";
 let url = "";
 let FILE = "";
+let date = "000000"
 
 function titleChange(e){
     title = titleInput.value;
@@ -59,7 +63,10 @@ function mainImgInputChange(e){
         for(let i of q){
             i.style.display = "none";
         }
+        let test = /data:image.*base64,/;
+        url = url.split(test)[1];
     }
+    
     reader.readAsDataURL(fileList.files[0]);
 }
 
@@ -114,12 +121,13 @@ function categoryButtonClick(e){
 
 function submitButtonClick(){
     let data = {
-        "file" : "C:\\Users\\user\\Desktop\\sw개발자대회\\front-end\\img\\Shoes_on ",
+        "binary" : url,
         "title" : title,
         "description" : explain,
         "size" : size,
-        "first_date" : "",
+        "first_date" : "000000",
         "price" : price,
+        "status" : state,
     };
     axios({
         url:`http://18.216.67.134:5000/Cloth/Register/${category}`,
@@ -130,6 +138,11 @@ function submitButtonClick(){
             "Access-Control-Allow-Origin" : "*",
             "Authorization": `Bearer ${localStorage.getItem("token")}`,
         },  
+    }).then(()=>{
+        alert("물품등록에 성공하셨습니다.");
+        location.href="../view/view_mobile.html";
+    }).catch(()=>{
+        alert("물품등록에 실패하였습니다. 누락된 곳을 확인하여 주세요.")
     })
 }
 

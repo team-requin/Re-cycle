@@ -1,0 +1,123 @@
+@import "../footer_mobile.css"; 
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+}
+
+body{
+    width:100%;
+    height:100vh;
+}
+
+#itemDetail_mobile{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+#sdf{
+    height: 100%;
+
+}
+
+#header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-bottom:10px;
+    height:10%;     
+}
+
+#header img{
+    width:100px;
+    height:100px;
+}
+
+#item{
+    height:90%;
+}
+
+#itemImg{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:320px;
+}
+
+#itemImg img{
+    width:130px;
+    height:200px;
+}
+
+#itemTitle{
+    text-align: center;
+    font-size:23px;
+    font-weight: 600;
+    display:block;
+}
+
+#center{
+    width:200px;
+}
+
+#itemInfo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size:17px;
+}
+
+#size , #state{
+    display:inline-block;
+    margin:0px 2px 0px 2px;
+    text-align: center;
+}
+
+#seller{
+    text-align: center;
+    display:inline-block;
+}
+
+#itemButtons{
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width:200px; */
+}
+
+#itemButtons input{
+    font-size:15px;
+    font-weight: 600;
+    width:85px;
+    height:35px;
+    margin:2px;
+    border-radius: 5px;
+    border:1px solid #4AB781;
+    background-color:white;
+    color : #4AB781;
+}
+
+#itemExplain{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+#explain{
+    width:300px;
+    height:50vh;
+    resize:none;
+    box-shadow:rgb(202, 202, 202) 0px 0px 3px 1px;
+    padding:10px;   
+    font-size:20px;
+}
+
+#price{
+    width:100%;
+    text-align: center;
+}

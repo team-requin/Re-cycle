@@ -18,8 +18,8 @@ iframe{
 #login{
     display:flex;
     justify-content: center;
-    /* align-items: center */
-    height:500px;
+    align-items: center;
+    height:700px;
     margin-bottom: 100px;
 }
 
@@ -133,10 +133,11 @@ label{
         display:flex;
         justify-content: center;
         align-items: center;
-        height:300px;
+        height:400px;
     }
     
     #title{
+        margin-top:50px;
         text-align: center;
         font-size:40px;
         font-weight: 600;
@@ -150,7 +151,10 @@ label{
         justify-content: center;
     }
     
-    
+    #inputDiv{
+        height:350px;
+    }
+
     #inputDiv input[type="text"] , #inputDiv input[type="password"]{
         display:block;
         width:250px;
@@ -208,7 +212,7 @@ label{
     
     #emailCheckNumber{
         display:none;
-        width:200px;
+        width:250px;
         height:50px;
         margin-top:20px;
         background-color:#fcfcfc;

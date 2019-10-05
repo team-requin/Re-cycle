@@ -1,18 +1,22 @@
+@import "../footer_mobile.css";
+
 *{
     padding:0;
     margin:0;
     border:0;
 }
 
-iframe{
-    width:100%;
-    height:100px;
-}
-
 #header{
     width:100%;
-    text-align: center;
-    background-color:#4AB781;
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#header img{
+    width:100px;
+    height:100px;
 }
 
 #header p{
@@ -36,7 +40,7 @@ iframe{
 #mypageImg{
     width:30px;
     height:30px;    
-    margin-left:90%;
+    margin-left:100%;
 }
 
 #profileImg{
@@ -52,6 +56,10 @@ iframe{
 
 #profileInfo{
     text-align: center;
+}
+
+#footer{
+    display:none;
 }
 
 #rank{
@@ -70,14 +78,14 @@ iframe{
 #menu{
     display: flex;
     flex-wrap: wrap;
-    width:700px;
+    width:300px;
     justify-content: center;
 }
 
 #center{
     display: flex;
     justify-content: center;
-    margin-bottom:130px;
+    margin-bottom:30px;
 }
 
 #menu{
@@ -85,27 +93,26 @@ iframe{
 }
 
 .menuContent{
-    width:120px;
-    height:180px;
-    padding:30px;
+    width:90px;
+    height:120px;
     display:flex;
     justify-content: center;
     border-radius: 20px;
     flex-wrap: wrap;
     border:1.5px solid #4AB781;
-    margin:15px;
+    padding:10px;
+    margin:5px;
 }
 
 .menuContent > img{
-    width:100px;
-    height: 100px;
+    width:50px;
+    height: 50px;
 }
 
 .menuContent p{
     display:inline-block;
     text-align: center;
     font-weight: 500;
-    font-size:22px;
-    margin-top:50px;
+    font-size:15px;
+    margin-top:0;
 }
-
