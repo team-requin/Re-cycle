@@ -50,7 +50,7 @@ basket.addEventListener("click",()=>{
 })
 
 list.addEventListener("click",()=>{
-
+    location.href="../payment/payment.html";
 })
 
 upload.addEventListener("click",()=>{

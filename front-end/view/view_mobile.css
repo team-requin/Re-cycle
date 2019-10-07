@@ -24,8 +24,8 @@
 }
 
 #logo img{
-    width:50px;
-    height:50px;    
+    width:100px;
+    height:90px;    
 }
 
 #itemView_mobile{
@@ -48,7 +48,7 @@
 }
 
 .itemDiv{
-    width:120px;
+    width:130px;
     height:180px;
     border:1px solid #707070;
     border-radius: 17px;
@@ -64,7 +64,7 @@
 }
 
 .itemDiv img{
-    width:120px;
+    width:130px;
     height: 180px;
     border:0;
 }
